@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Area is <span id="area"></span></h2>
+    <script>
+        try{
+            var l = prompt('enter the length')
+            var b = prompt('enter the bredth')
+            var h = prompt('enter the height')
+
+            
+            var area = 1/2 * l * b * h
+
+            if(isNaN(area)) throw 'Enter valid number'
+        }
+        catch(err){
+            
+            document.getElementById('area').innerHTML = err
+            console.log(err)
+        }
+        finally{
+            document.getElementById('area').innerHTML = area
+        }
+
+
+        
+    </script>
+</body>
+</html>

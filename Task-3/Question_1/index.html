@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="day"></h2>
+    <h2 id="time"></h2>
+    
+
+    <script>
+        var today = new Date();
+        var day = today.getDay();
+        
+        var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        const aj = "Today is : " + daylist[day] + "."
+        document.getElementById('day').innerHTML = aj
+
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+        var prepand = (hour >= 12)? " PM ":" AM ";
+        hour = (hour >= 12)? hour - 12: hour;
+
+        const time = "Current Time : " + hour + prepand + " : " + minute + " : " + second
+        document.getElementById('time').innerHTML = time
+    </script>    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="match"></h2>
+    <script>
+        var random = Math.random(10) * 10
+        random = Math.ceil(random)
+
+        var inputNumber = prompt('Enter the number')
+
+        if(random == inputNumber){
+            document.getElementById('match').innerHTML = 'Good Work'
+        }else{
+            document.getElementById('match').innerHTML = 'Not matched'
+        }
+    </script>
+</body>
+</html>

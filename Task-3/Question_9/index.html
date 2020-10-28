@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var today = new Date()
+        var date = today.getDate()
+        var mn = today.getMonth()
+        var days = 0
+        while(mn <= 12){
+            if(mn <= 7 && mn != 2){
+                if(mn % 2 == 0){
+                    days += 30
+                }else{
+                    days += 31
+                }
+            }else{
+                
+            }
+        }
+        
+        console.log(mn)
+    </script>
+</body>
+</html>
