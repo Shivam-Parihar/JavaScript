@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2>Here is the Output <span id="output"></span></h2>
+    <script>
+        //annonymous function
+        //in the second argument we have passed the value for x 
+        var Output = (function(x){
+            delete x
+            return x
+        })(0)
+        console.log(Output)
+        document.getElementById('output').innerHTML = Output
+    </script>
+</body>
+</html>

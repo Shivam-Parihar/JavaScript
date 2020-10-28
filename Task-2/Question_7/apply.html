@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is <span id="output"></span></h2>
+
+    <script>
+        /*
+        The apply() method takes arguments as an array.
+        */
+        var person = {
+        fullName: function(city, country) {
+            return this.firstName + " " + this.lastName + " from " + city + " " + country;
+        }
+        }
+        var person1 = {
+        firstName: "Shivam",
+        lastName: "Parihar"
+        }
+        document.getElementById('output').innerHTML = person.fullName.apply(person1,['Bhopal','India']);
+    </script>
+</body>
+</html>

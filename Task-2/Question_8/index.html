@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>First one <span id="First"></span></h2>
+    <h2>Second one <span id="Second"></span></h2>
+    <h2>Third one <span id="Third"></span></h2>
+    <h2>Fourth one <span id="Fourth"></span></h2>
+
+    <script>
+
+        //The first way of deleting all the elements in the array
+        var emptyArray = ['S','H','I','V','A','M']
+        emptyArray.length = 0
+        console.log(emptyArray)
+        document.getElementById('First').innerHTML = emptyArray
+
+        //The second way of deleting all the elements in the array
+        var anotherArray = ['P','A','R','I','H','A','R']
+        anotherArray = []
+        console.log(anotherArray)
+        document.getElementById('Second').innerHTML = anotherArray
+
+
+        //The third way of deleting all the elements in the array 
+        var newArray = [20,34,50,12]
+        newArray.splice(0,newArray.length)
+        console.log(newArray)
+        document.getElementById('Third').innerHTML = newArray
+
+        //The fourth way of deleting all the elements in the array
+        var nextArray = [43,13,5,6,78]
+        while(nextArray.length > 0){
+            nextArray.pop()
+        }
+        console.log(nextArray)
+        document.getElementById('Fourth').innerHTML = nextArray
+
+    </script>
+</body>
+</html>

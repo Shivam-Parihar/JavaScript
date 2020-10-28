@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here is the Output <span id="output"></span></h2>
+
+    <script>
+        /*
+        Object.create()
+        This methods allows you to easily implement differential inheritance,
+        where objects can directly inherit from other objects.
+        */
+        var Employee ={
+                        company: 'xyz'
+                    }
+        var Emp1 = Object.create(Employee);
+        delete Emp1.company 
+        console.log(Emp1.company);
+        document.getElementById('output').innerHTML = Emp1.company
+
+
+    </script>
+</body>
+</html>

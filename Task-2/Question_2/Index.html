@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <h2>Creating a new Array</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>We have choosen <span id="course"></span></h4>
+    <script>
+        //There are two ways where we can create array
+
+        var courses = ['Java','Python','C++','Javascript']
+        console.log(courses[0])
+        console.log(courses[1])
+        console.log(courses[2])
+
+        document.getElementById('course').innerHTML = courses[3]
+
+        //2nd ways of creating the array is 
+
+        var moreCourses = new Array('React','Node','Monogodb','Express')
+        console.log(moreCourses[0])
+
+    </script>
+</body>
+</html>

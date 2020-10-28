@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here is the Output <span id="output"></span></h2>
+
+    <script>
+        var X = { Foo : 1}; 
+        var Output = (function() 
+        { 
+        delete X.Foo; 
+        return X.Foo; 
+        } 
+        )(); 
+        console.log(Output);
+        document.getElementById('output').innerHTML = Output
+
+
+    </script>
+</body>
+</html>
